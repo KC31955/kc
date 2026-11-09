@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不同預算下的寵物飼養指南：恆溫與非恆溫動物全解析</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #16a085;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .budget-section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            padding: 25px;
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        .budget-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .category-card {
+            background-color: #fafafa;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .category-card.homeotherm {
+            border-left: 4px solid #e74c3c;
+        }
+
+        .category-card.poikilotherm {
+            border-left: 4px solid #2980b9;
+        }
+
+        .category-header {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .tag {
+            font-size: 0.8em;
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .tag.homeo { background-color: #e74c3c; }
+        .tag.poikilo { background-color: #2980b9; }
+
+        .pet-item {
+            background: white;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            border: 1px solid #eee;
+        }
+
+        .pet-name {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        ul {
+            margin: 5px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .note-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>不同預算下的寵物飼養指南</h1>
+    <div class="subtitle">涵蓋恆溫動物（哺乳類、鳥類）與非恆溫動物（兩棲爬蟲、魚類、昆蟲）的完整環境與設施解析</div>
+
+    <!-- 低預算區間 -->
+    <div class="budget-section">
+        <h2 class="budget-title">一、 低預算層級（入門設備 &lt; NT$ 3,000 / 月開銷 &lt; NT$ 1,000）</h2>
+        <div class="category-grid">
+            
+            <!-- 恆溫 -->
+            <div class="category-card homeotherm">
+                <div class="category-header">
+                    <span>恆溫動物 (Warm-blooded)</span>
+                    <span class="tag homeo">恆溫</span>
+                </div>
+                
+                <div class="pet-item">
+                    <div class="pet-name">小型倉鼠（三線鼠、黃金鼠）</div>
+                    <div><span class="detail-label">必備設施：</span>整理箱/鼠籠（建議底面積 60x40cm 以上）、跑輪（直徑 21cm+）、墊料（木屑/紙纖維）、水瓶、食盆、避難窩。</div>
+                    <div><span class="detail-label">環境要求：</span>室溫保持在 20–26°C，避免陽光直射與通風不良。夏季需放置散熱墊或開冷氣，冬季需提供厚墊料或保暖棉。</div>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">小型觀賞鳥（文鳥、十姊妹）</div>
+                    <div><span class="detail-label">必備設施：</span>鳥籠（高深型為佳）、棲木（不同粗細天然木）、防濺食盆、自動飲水器、底網襯紙。</div>
+                    <div><span class="detail-label">環境要求：</span>通風良好、採光充足但不可持續暴曬；夜間需維持安靜並可罩上遮光布。最適溫度 20–28°C。</div>
+                </div>
+            </div>
+
+            <!-- 非恆溫 -->
+            <div class="category-card poikilotherm">
+                <div class="category-header">
+                    <span>非恆溫動物 (Cold-blooded)</span>
+                    <span class="tag poikilo">非恆溫</span>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">甲蟲類（獨角仙、鍬形蟲）</div>
+                    <div><span class="detail-label">必備設施：</span>飼養箱（帶通風孔）、發酵木屑/昆蟲泥炭土、攀爬木塊、甲蟲果凍皿。</div>
+                    <div><span class="detail-label">環境要求：</span>微暗潮濕環境（噴水維持土壤濕潤），溫度保持在 22–26°C。高溫易導致死亡。</div>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">小型淡水魚/蝦（孔雀魚、米蝦）</div>
+                    <div><span class="detail-label">必備設施：</span>1尺小水族缸、外掛過濾器、底砂（黑膽砂/火山石）、水草、水質穩定劑。</div>
+                    <div><span class="detail-label">環境要求：</span>避免日照長藻；水溫維持 22–28°C（寒流需加裝小型控溫棒）。每週定時換水 1/3。</div>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">守宮類（豹紋守宮）</div>
+                    <div><span class="detail-label">必備設施：</span>壓克力/玻璃爬蟲箱、加熱墊、濕藏避難穴、乾避難穴、鈣粉、水盆。</div>
+                    <div><span class="detail-label">環境要求：</span>冷熱分區（熱區 30–32°C，冷區 24–26°C），使用底部加熱墊提供熱源；保持適度乾燥。</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 中預算區間 -->
+    <div class="budget-section">
+        <h2 class="budget-title">二、 中預算層級（入門設備 NT$ 3,000–15,000 / 月開銷 NT$ 1,000–3,000）</h2>
+        <div class="category-grid">
+            
+            <!-- 恆溫 -->
+            <div class="category-card homeotherm">
+                <div class="category-header">
+                    <span>恆溫動物 (Warm-blooded)</span>
+                    <span class="tag homeo">恆溫</span>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">短毛貓（領養/米克斯）</div>
+                    <div><span class="detail-label">必備設施：</span>貓砂盆、貓砂、貓抓板、飲食碗（推薦陶瓷/不鏽鋼）、自動飲水機、指甲剪、運輸籠。</div>
+                    <div><span class="detail-label">環境要求：</span>室內飼養，需做好防墜措施（窗戶加裝防護網）。準備垂直活動空間（貓跳台/牆面層板）。</div>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">兔類（天生好動且體型較大）</div>
+                    <div><span class="detail-label">必備設施：</span>大型兔籠/放養圍欄、腳踏墊（保護腳底）、便盆、無限量牧草架、滾珠水瓶、磨牙玩具。</div>
+                    <div><span class="detail-label">環境要求：</span>極度怕熱！環境溫度需嚴格控制在 18–25°C。地面需鋪設防滑墊以防關節受傷，電線需做防咬包裹。</div>
+                </div>
+            </div>
+
+            <!-- 非恆溫 -->
+            <div class="category-card poikilotherm">
+                <div class="category-header">
+                    <span>非恆溫動物 (Cold-blooded)</span>
+                    <span class="tag poikilo">非恆溫</span>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">鬆獅蜥（中型爬蟲）</div>
+                    <div><span class="detail-label">必備設施：</span>3尺以上爬蟲缸、UVB燈管、太陽燈/加熱燈、爬全鈣粉、溫濕度計、爬木與避難所。</div>
+                    <div><span class="detail-label">環境要求：</span>曬背區高溫要達到 38–40°C，環境整體溫度 28–32°C，需每日提供 10–12 小時 UVB 光照以利鈣質吸收。</div>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">角蛙</div>
+                    <div><span class="detail-label">必備設施：</span>塑膠/玻璃養殖箱、生化棉/生態泥炭土、淺水盆、防病藥劑。</div>
+                    <div><span class="detail-label">環境要求：</span>環境濕度維持 70%–80%，溫度 24–28°C。水質需經過去氯處理，水深不可高於嘴部防止溺水。</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 高預算區間 -->
+    <div class="budget-section">
+        <h2 class="budget-title">三、 高預算層級（入門設備 &gt; NT$ 15,000 / 月開銷 &gt; NT$ 3,000+）</h2>
+        <div class="category-grid">
+            
+            <!-- 恆溫 -->
+            <div class="category-card homeotherm">
+                <div class="category-header">
+                    <span>恆溫動物 (Warm-blooded)</span>
+                    <span class="tag homeo">恆溫</span>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">犬類（中大型犬 / 特定品種犬）</div>
+                    <div><span class="detail-label">必備設施：</span>胸背帶與牽引繩、狗床、胸背狗籠/航空箱、玩具、胸背防滑地墊、益智餵食玩具。</div>
+                    <div><span class="detail-label">環境要求：</span>需要較大的室內空間與每日固定戶外運動時間（散步）。夏日室內需開啟冷氣控制在 22–25°C 以防中暑。</div>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">龍貓（絨鼠）</div>
+                    <div><span class="detail-label">必備設施：</span>高挑多層大金屬籠、火山灰火山砂浴室、滾輪（直徑35cm+）、踏板、咬木、自動控溫設備。</div>
+                    <div><span class="detail-label">環境要求：</span>環境極度苛刻，溫度必須維持在 18–22°C 之間，濕度 &lt; 50%，需 24 小時開冷氣與除濕機。</div>
+                </div>
+            </div>
+
+            <!-- 非恆溫 -->
+            <div class="category-card poikilotherm">
+                <div class="category-header">
+                    <span>非恆溫動物 (Cold-blooded)</span>
+                    <span class="tag poikilo">非恆溫</span>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">海水缸生態系（小丑魚、珊瑚）</div>
+                    <div><span class="detail-label">必備設施：</span>超白玻璃缸、蛋白除油器、冷水機、高階LED燈具、造浪泵、海水素、比重計、RO/DI淨水機。</div>
+                    <div><span class="detail-label">環境要求：</span>水溫需嚴格控制在 24–26°C（必須配置冷水機），水質鹽度、硝酸鹽與鈣鎂元素需要定期檢測維護。</div>
+                </div>
+
+                <div class="pet-item">
+                    <div class="pet-name">大型陸龜（蘇卡達、豹紋陸龜）</div>
+                    <div><span class="detail-label">必備設施：</span>大型室內溫控爬箱或戶外專屬庭院防護圍欄、金屬鹵素燈（UVB/UVA）、夜間保暖陶瓷燈、大型淺水浴盆。</div>
+                    <div><span class="detail-label">環境要求：</span>極需空間。日間曬熱區 35°C，整體 28–30°C，夜間不低於 22°C。需要大量日照與活動爬行場所。</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 評估與注意事項 -->
+    <div class="note-box">
+        <h3>💡 預算評估注意事項（隱形成本）：</h3>
+        <ul>
+            <li><strong>醫療開銷：</strong>非恆溫動物與特寵（鼠、兔、鳥）需尋找專科獸醫，看診與手術費用通常比一般犬貓高昂。</li>
+            <li><strong>水電費用：</strong>高溫/低溫動物（如龍貓、海水缸、高溫爬蟲）夏季與冬季的冷氣、加熱燈、冷水機將大幅增加每月電費。</li>
+            <li><strong>生命週期承諾：</strong>陸龜、大型鸚鵡壽命可達數十年，需考慮長期預算與時間投入。</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
